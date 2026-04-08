@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5e6e8;
+}
+
+/* HEADER */
+header {
+    background-color: #c8a2a8;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* 👇 magia aquí */
+.logo {
+    width: 260px;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 20px; 
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2); 
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h2 {
+    color: #8b5e63;
+}
+
+.hero button {
+    background-color: #8b5e63;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* SERVICIOS */
+.servicios {
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BOTONES */
+.btn {
+    background-color: #8b5e63;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* ANIMACIÓN */
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #a86f75;
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* 👈 CLAVE */
+}
+
+/* Precios */
+.popup-img {
+    width: 60%;
+    max-width: 600px;
+    margin: 40px auto;
+    display: block;
+    border-radius: 15px;
+}
+
+/* BOTÓN CERRAR */
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 28px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== FORMULARIO ===== */
+.formulario {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.formulario h2 {
+    color: #8b5e63;
+    margin-bottom: 20px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.formulario input,
+.formulario select {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.mensaje {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.galeria h2 {
+    text-align: center;
+    color: #8b5e63;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #c8a2a8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Miyottzi Moreno Nail Artist</title>
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/clientes/styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="static/clientes/logo.png" class="logo">
+    <h1>Miyottzi Moreno</h1>
+    <p>Nail Artist</p>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Haz lucir tus uñas increíbles</h2>
+    <p>Agenda tu cita hoy mismo</p>
+
+    <button class="btn" onclick="irFormulario()">Agendar cita</button>
+    <br><br>
+    <button class="btn" onclick="abrirPrecios()">Ver lista de precios</button>
+</section>
+
+<!-- SERVICIOS -->
+<section class="servicios">
+    <h2>Servicios</h2>
+
+    <div class="card">
+        <h3>Manicure</h3>
+        <p>Cuidado y estilo para tus manos</p>
+    </div>
+
+    <div class="card">
+        <h3>Pedicure</h3>
+        <p>Relajación y belleza para tus pies</p>
+    </div>
+
+    <div class="card">
+        <h3>Diseños</h3>
+        <p>Arte único en tus uñas</p>
+    </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="galeria">
+    <h2>Manos y pies de princesas ✨</h2>
+
+    <div class="grid">
+        <img src="static/clientes/manos1.jpg">
+        <img src="static/clientes/manos2.jpg">
+        <img src="static/clientes/manos3.jpg">
+        <img src="static/clientes/manos4.jpg">
+        <img src="static/clientes/manos5.jpg">
+        <img src="static/clientes/manos6.jpg">
+        <img src="static/clientes/manos7.jpg">
+        <img src="static/clientes/manos8.jpg">
+        <img src="static/clientes/manos9.jpg">
+        <img src="static/clientes/manos10.jpg">
+        <img src="static/clientes/manos11.jpg">
+        <img src="static/clientes/manos12.jpg">
+        <img src="static/clientes/pies.jpg">
+    </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section class="ubicacion">
+    <h2>Ubicación</h2>
+
+    <iframe 
+        src="https://www.google.com/maps?q=C.+Primo+Feliciano+Vel%C3%A1zquez+3214,+Vallarta+Sur,+Guadalajara&z=17&output=embed"
+        width="100%" 
+        height="300" 
+        style="border:0; border-radius:15px;" 
+        loading="lazy">
+    </iframe>
+
+    <br><br>
+
+    <a href="https://www.google.com/maps/place/C.+Primo+Feliciano+Vel%C3%A1zquez+3214,+Vallarta+Sur,+Guadalajara"
+       target="_blank"
+       class="btn">
+        Ver en Google Maps
+    </a>
+</section>
+
+<!-- FORMULARIO -->
+<section id="formulario" class="formulario">
+    <h2>Agenda tu cita</h2>
+
+    <form onsubmit="enviarWhatsApp(event)">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="text" name="telefono" placeholder="Tu teléfono" required>
+
+        <select name="servicio" required>
+            <option value="">Selecciona un servicio</option>
+            <option>Manicure Ruso</option>
+            <option>Pedicure Tradicional</option>
+            <option>Pedicure Spa</option>
+            <option>Uñas de Acrilico</option>
+            <option>Uñas de Polygel</option>
+            <option>Retoque de Acrilico</option>
+            <option>Retoque de Polygel</option>
+            <option>Gelish</option>
+            <option>Retiro de Acrilico</option>
+            <option>Retiro de Gel</option>
+            <option>Retiro de Polygel</option>
+            <option>Vita Base</option>
+            <option>Rubber</option>
+            <option>Calcio</option>
+            <option>Baño de Acrilico</option>
+            <option>Baño de Polygel</option>
+        </select>
+
+        <input type="date" name="fecha" required>
+
+        <button type="submit" class="btn">Enviar solicitud</button>
+    </form>
+
+    <p class="mensaje" id="mensaje"></p>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="redes" style="text-align: center; margin: 20px;">
+    <h2>Síguenos en Instagram 📸</h2>
+
+    <a href="https://www.instagram.com/miyottzi_moreno/?hl=es" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
+             alt="Instagram" 
+             width="50"
+             style="border-radius: 10px; box-shadow: 0px 2px 8px rgba(0,0,0,0.2);">
+    </a>
+
+    <p>@miyottzi_moreno</p>
+</section>
+
+<!-- POPUP PRECIOS -->
+<div id="popup" class="popup">
+    <span class="cerrar" onclick="cerrarPrecios()">✖</span>
+    <img src="static/clientes/precios.jpg" class="popup-img">
+</div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/529995017646"
+   target="_blank"
+   class="whatsapp">
+    💬
+</a>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Miyottzi Moreno Nail Artist 💅</p>
+    <p>Guadalajara, Jalisco</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+function abrirPrecios() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function cerrarPrecios() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function irFormulario() {
+    document.getElementById("formulario").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function enviarWhatsApp(event) {
+    event.preventDefault();
+
+    let nombre = document.querySelector("input[name='nombre']").value;
+    let telefono = document.querySelector("input[name='telefono']").value;
+    let servicio = document.querySelector("select[name='servicio']").value;
+    let fecha = document.querySelector("input[name='fecha']").value;
+
+    let mensaje = `Hola, soy ${nombre}. Quiero agendar ${servicio} para el día ${fecha}. Mi número es ${telefono}`;
+
+    let url = "https://wa.me/529995017646?text=" + encodeURIComponent(mensaje);
+
+    window.open(url, "_blank");
+
+    document.getElementById("mensaje").innerText = "Solicitud enviada. Espera confirmación de Miyottzi 💅";
+}
+</script>
+
+</body>
+</html>
