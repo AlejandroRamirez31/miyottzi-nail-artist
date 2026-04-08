@@ -17,7 +17,7 @@ Sitio web para un salón de uñas, creado como proyecto real para mostrar servic
 * CSS (básico)
 * Deploy en Netlify
 
-### 🌐 Demo
+### 🌐 Sitio Web en Vivo
 
 👉 [https://miyottzimoreno.netlify.app/](https://miyottzimoreno.netlify.app/)
 
@@ -44,7 +44,7 @@ Website for a nail salon, created as a real project to showcase services and con
 * Basic CSS
 * Deployed on Netlify
 
-### 🌐 Live Demo
+### 🌐 Live Website
 
 👉 [https://TU-SITIO.netlify.app/](https://miyottzimoreno.netlify.app/)
 
