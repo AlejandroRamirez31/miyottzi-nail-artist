@@ -46,7 +46,7 @@ Website for a nail salon, created as a real project to showcase services and con
 
 ### 🌐 Live Website
 
-👉 [https://TU-SITIO.netlify.app/](https://miyottzimoreno.netlify.app/)
+👉 https://miyottzimoreno.netlify.app/
 
 ### 📌 Purpose
 
